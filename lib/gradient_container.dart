@@ -1,9 +1,12 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:ze04/diceroll.dart';
 import 'package:ze04/stylet.dart';
 
 class Gcontainer extends StatelessWidget{
   Gcontainer({super.key});
+
+  var dicechange = '/imges/Dice/dice-1.png';
 
   Widget build(context){
     return Container(
@@ -16,10 +19,8 @@ class Gcontainer extends StatelessWidget{
         end: Alignment.bottomLeft
         )
       ),
-        child: Center(
-          child: Stylet()
-    )
-    );
+        child: Center( 
+        child: DiceThrown()));
     
   }
 
